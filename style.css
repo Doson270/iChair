@@ -1,0 +1,325 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: 'SF Pro Display', sans-serif;
+                                                
+}
+/* Header en position fixed contentant le logo et un titre */
+.header {
+    background-color: #FBFBFD;
+    padding: 15px;
+    border-bottom: 1px solid rgb(205, 205, 205);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+} 
+.headerContainer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 89%;
+}
+.divLogo {
+    width: 2.5em;
+    
+}
+.divLogo > img {
+    width: 100%;
+}
+.subHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+.subHeader > i {
+    font-size: 20px;
+    color: #5A5A5B;
+}.subHeader > i:hover {
+      -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  
+}
+.subHeader > h2 {
+    font-size: 17px;
+}
+
+/* MAIN  */
+
+main {
+    padding: 60px 20px;
+}
+main > .price {
+    color: #5A5A5B;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.titleChair {
+    padding-top: 81px;
+}
+/* Définition d'un container pour gérer l'affichage */
+.container {
+    overflow: hidden;
+    /* Cache les éléments qui dépassent du container */
+}
+
+/* Définition du carousel */
+.carousel {
+    position: relative;
+    /* Le carousel est positionné relativement à son parent */
+}
+
+/* Définition de l'élément contenant les diapositives */
+.carousel-inner {
+    display: flex;
+    /* Affiche les éléments en ligne */
+    overflow: hidden;
+    /* Hauteur égale à 100% de la hauteur de la vue */
+    flex-wrap: nowrap;
+    /* Empêche les éléments de se placer sur plusieurs lignes */
+}
+
+/* Définition des diapositives */
+.slide {
+    flex: 0 0 100%;
+    /* Largeur de chaque diapositive est de 100% */
+    height: 100%;
+    /* Hauteur de chaque diapositive est de 100% */
+    transition: .5s ease-in-out;
+    /* Ajout d'une animation douce pour la transition entre les diapositives */
+}
+
+/* Définition de l'affichage de l'image de chaque diapositive */
+.slide img {
+    width: 100%;
+    /* Largeur de l'image est de 100% */
+    height: 100%;
+    /* Hauteur de l'image est de 100% */
+    object-fit: cover;
+    /* Couvre tout l'espace disponible */
+}
+
+/* Définition des boutons de contrôle du carousel */
+.carousel-controls {
+    position: absolute;
+    /* Les boutons sont absolument positionnés */
+    z-index: 5;
+    /* Ils sont placés au-dessus des autres éléments */
+    left: 10%;
+    /* La distance à gauche est de 10% */
+    right: 10%;
+    /* La distance à droite est de 10% */
+    top: 50%;
+    /* La distance du haut est de 50% */
+    display: flex;
+    /* Affiche les boutons en ligne */
+    justify-content: space-between;
+    /* Espacement égal entre les boutons */
+}
+
+/* Style des boutons de contrôle */
+.carousel-controls button {
+    padding: 10px;
+    /* Ajout de padding pour un meilleur contrôle */
+    background-color: aquamarine;
+    /* Arrière-plan en aquamarine */
+}
+
+/* Définition des points de contrôle */
+.carousel-dots {
+    position: absolute;
+    /* Les points sont absolument positionnés */
+    z-index: 5;
+    /* Ils sont placés au-dessus des autres éléments */
+    left: 50%;
+    /* La distance à gauche est de 50% */
+    right: 50%;
+    /* La distance à droite est de 50% */
+    bottom: 0%;
+    /*La distance du bas est de 10% */
+    display: flex;
+    /* Affiche les points en ligne */
+    justify-content: center;
+    /* Centrage des points */
+}
+
+/* Style des points de contrôle */
+.carousel-dots .dot {
+    border-radius: 50%;
+    /* Les points sont en forme de cercle */
+    margin: 2px;
+    /* Ajout d'un margin pour un meilleur contrôle */
+    cursor: pointer;
+    /* Curseur en forme de main pour un meilleur contrôle */
+}
+
+/* Styles pour les points de navigation du carrousel */
+.carousel-dots .active {
+    border: 10px solid #333333 !important;
+}
+
+.carousel-dots .inactive {
+    border: 10px solid rgb(148, 148, 148)
+}
+/* Partie contennt les logo de livraison et de support */
+.border {
+    width: 100%;
+    border-bottom: solid 1px #cdcdd0;
+    background-color: white;
+    margin: 0% auto;
+    padding-top: 4em;
+}
+.delivery > img {
+    width: 100%;
+}
+
+.delivery {
+    width: 8%;
+    margin-top: 25px;
+}
+.titleDel {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+.titleDel > p {
+    margin-top: 20px;
+    width: 124.983px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+/* Bordure */
+.solid {
+    margin-top: 4em;
+    background-color: #F5F5F7;
+    text-align: center;;
+}
+.solid > h2 {
+    padding-top: 3em;
+    padding-bottom: 15px;
+}
+.solid > p {
+    margin: 0px 20px;
+    font-size: 13px;
+}
+/* Section contenant la partie "robustesse. Confort" */
+img {
+    width: 100%;
+}
+.imgSolid {
+    display: flex;
+    justify-content: space-evenly;
+}
+.imgSolid > div  {
+    width: 30%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+.imgSolid > div >img {
+    border-radius: 15px;
+}
+
+/* Section information */
+.titleSection {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: 22px;
+}
+.infoSection > p {
+    font-size: 13px;
+    margin-top: 1.5em;
+    width: 95%;
+    color: #5A5A5B;
+}
+.infoSection > h4 {
+    color: #5A5A5B;
+}
+.info {
+    padding-top: 1.5em;
+}
+.titleCara {
+    padding-top: 1.5em;
+}
+li {
+    list-style-type: none;
+    font-size: 13px;
+    color: #5A5A5B;
+}
+/* Footer */
+footer > div {
+    background-color: #F5F5F7;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer > div > span {
+    font-size: 10px;
+    color: #5A5A5B;
+}
+/* Media query pour le responcive format tablette */
+
+@media screen and (min-width: 728px) and (max-width: 1023px) {
+    .mainFirst {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .border{
+        padding-top: 0;
+    }
+    .titleDel {
+    margin-top: 35%;
+    margin-bottom: 47%;
+    }
+    .mainSection {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .solid {
+    width: 45%;
+    border-radius: 7%;
+    }
+    .borderFirst {
+        display: none;
+    }
+    h4 {
+        padding-bottom: 1em;
+    }
+}
+@media screen and (min-width: 1024px) {
+        .mainFirst {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .border{
+        padding-top: 0;
+    }
+ 
+    .mainSection {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .solid {
+    width: 45%;
+    border-radius: 7%;
+    }
+    .borderFirst {
+        display: none;
+    }
+    h4 {
+        padding-bottom: 1em;
+    }
+     .container {
+        width: 24%;
+        padding-right: 194px;
+}  }
